@@ -9,11 +9,10 @@
 
 int main(void)
 {
-char c = '0';
-while (c <= '9')
+int i;
+for (i = 0; i < 10; i++)
 {
-putchar(c);
-c++;
+    printf("%i", i);
 }
 printf("\n");
 return (0);
