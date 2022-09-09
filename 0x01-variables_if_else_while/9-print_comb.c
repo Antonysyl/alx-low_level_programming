@@ -11,7 +11,6 @@
 int main(void)
 {
 int d = 0;
-int com = 44;
 while (d < 10)
 {
 putchar(d + '0');
