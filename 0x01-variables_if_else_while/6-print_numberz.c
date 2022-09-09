@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - program that prints all single digit numbers of base 10 starting from 0
@@ -8,15 +6,16 @@
  * You can only use the putchar option
  * Return: 0
  */
-
 int main(void)
 {
-int c = 0;
-while (c < 10)
-{
-putchar(48 + c);
-c++;
+    int n;
+
+    for (n = 48; n < 58; n++)
+    {
+       putchar(n);
+    }
+    putchar('\n');
+    return (0);
 }
-putchar('\n');
-return (0);
-}
+
+
