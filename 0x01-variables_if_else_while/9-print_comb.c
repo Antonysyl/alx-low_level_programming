@@ -10,17 +10,17 @@
 
 int main(void)
 {
-int n = 48;
+int d = 0;
 int com = 44;
-while (n <= 57)
+while (d < 10)
 {
-putchar(n)
-if (n != 57)
+putchar(d + '0');
+if (d < 9)
 {
-putchar(com);
-putchar(32);
+putchar(',');
+putchar(' ');
 }
-n += 1;
+d++;
 }
 putchar('\n');
 return (0);
