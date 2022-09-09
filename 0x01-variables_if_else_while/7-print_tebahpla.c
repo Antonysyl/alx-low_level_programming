@@ -8,9 +8,12 @@
 
 int main(void)
 {
-char ch;
-for(ch = 'z'; ch >= 'a'; ch-- )
-putchar(ch);
+char c = 'z';
+while (c >= 'a')
+{
+putchar(c);
+c--;
+}
 putchar('\n');
 return (0);
 }

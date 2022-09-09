@@ -8,9 +8,12 @@
 
 int main(void)
 {
-int i;
-for(i = 0; i <= 9; i++)
-printf("%d", i);
+char c = '0';
+while (c <= '9')
+{
+putchar(c);
+c++;
+}
 printf("\n");
 return (0);
 }

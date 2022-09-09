@@ -11,9 +11,12 @@
 
 int main(void)
 {
-int i;
-for (i = 0; i <= 9; i++)
-putchar(i + '0');
+int c = 0;
+while (c < 10)
+{
+putchar(48 + c);
+c++;
+}
 putchar('\n');
 return (0);
 }
