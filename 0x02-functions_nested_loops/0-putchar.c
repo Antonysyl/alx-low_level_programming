@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-char c[] = "_putchar \n";
-
-for(int a=0; a<=c.length; a++)
+char antony[9] = "_putchar";
+int i = 0;
+while (i < 8)
 {
-	putchar(c[a]);
-	a++;
+_putchar(antony[i]);
+i++;
 }
+_putchar('\n')
 return (0);
 }
