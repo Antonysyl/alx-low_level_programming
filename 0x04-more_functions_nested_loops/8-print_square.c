@@ -18,7 +18,6 @@ ii++;
 _putchar('\n');
 i++;
 }
-iof(i == 0)
+if (i == 0)
 _putchar('\n');
 }
-
