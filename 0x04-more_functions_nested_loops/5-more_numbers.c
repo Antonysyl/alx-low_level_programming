@@ -3,7 +3,7 @@
  * more_numbers - prints more numbers
  * Return: void/ nothing
  */
-void more_numbers(void)
+void more_numbers(void);
 {
 char n, c;
 int i = 0;
