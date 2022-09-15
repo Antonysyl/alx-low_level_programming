@@ -3,23 +3,17 @@
  * more_numbers - prints more numbers
  * Return: void/ nothing
  */
-void more_numbers(void);
+void more_numbers(void)
 {
-char n, c;
-int i = 0;
-while (i < 10)
+int i, j;
+for (i = 0; i < 10; i++)
 {
-for (n = 0; n <= 14; n++)
+for (j = 0; j <= 14; j++)
 {
-c = n;
-if (n > 9)
-{
-_putchar('1');
-c = n % 10;
-}
-_putchar('0' + c);
+if (j >= 10)
+_putchar('0' + (j / 10));
+_putchar('0' + (j % 10));
 }
 _putchar('\n');
-i++;
 }
 }
