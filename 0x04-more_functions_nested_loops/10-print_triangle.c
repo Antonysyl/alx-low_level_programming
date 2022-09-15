@@ -6,7 +6,7 @@
  */
 void print_triangle(int size)
 {
-in row, col, aux;
+int row, col, aux;
 if (size > 0)
 {
 for (row = 0; row < size; row++)
