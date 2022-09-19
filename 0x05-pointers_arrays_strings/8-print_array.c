@@ -6,7 +6,7 @@
  * @n: int type integer
  * Description: Numbers must be seperated by commas and space.
  * Numbers should be displayed in the same order they are stored in array.
- * printf is allowed 
+ * printf is allowed
  */
 void print_array(int *a, int n)
 {
