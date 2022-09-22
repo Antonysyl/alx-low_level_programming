@@ -12,7 +12,7 @@ char S1[] = "AEOTL";
 char s2[] = "43071";
 for (i = 0; s[i] != '\0'; i++)
 {
-for(ii = 0; ii < 5; ii++)
+for (ii = 0; ii < 5; ii++)
 {
 if (s[i] == s1[ii] || s[i] == S1[ii])
 {
@@ -22,3 +22,4 @@ break;
 }
 }
 return (s);
+}

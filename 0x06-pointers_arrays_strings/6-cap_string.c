@@ -4,7 +4,7 @@
  * @str: pointer
  * Return: capitalized string
  */
-char *cap_string(char *str);
+char *cap_string(char *str)
 {
 char sep[] = ",\t;\n; .!?\"(){}";
 int flag, i, ii;
