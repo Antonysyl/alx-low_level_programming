@@ -7,23 +7,20 @@ include "main.h"
  */
 char *_strstr(char *haystack, char *needle)
 {
-char *result = haystack, *fneedle = needle;
-while (*haystack)
+char *res;
+char *aux;
+while (*haystack != '\0')
 {
-while (*needle)
+res = haystack;
+aux = needle;
+while (*aux == *haystack && *aux != '\0'
+&& *haystack != '\0')
 {
-if (*haystack++ != *needle++)
-{
-break;
+haystack++;
+aux++;
 }
+if (*aux == '\0')
+return (res);
+haystack = res + 1;
 }
-if (!*needle)
-{
-return (result);
-}
-needle = fneedle;
-result++;
-haystack = result;
-}
-return (0);
-}
+return (NULL);

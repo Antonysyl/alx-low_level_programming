@@ -1,5 +1,4 @@
 include "main.h"
-
 /**
  * _memset - fills the first n bytes
  * @s: pointer to char params
