@@ -24,3 +24,4 @@ return (res);
 haystack = res + 1;
 }
 return (NULL);
+}
