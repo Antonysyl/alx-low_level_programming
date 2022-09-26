@@ -7,17 +7,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int c = 0;
-char *t = accept;
-while (*s++)
+unsigned int cont = 0;
+int j = 0;
+int flag;
+while (*s != '\0')
 {
-while (*accept++)
-if (*(s - 1) == *(accept - 1))
-c++;
-break;
-if (!(*--accept))
-break;
-accept = t;
+flag = 0;
+while (*(accept + j) != '\0')
+{
+if (*s == *(accept + j))
+flag = 1;
+j += 1;
 }
-return (c);
+j = 0;
+if (flag == 0)
+break;
+cont += 1;
+s++;
+}
+return (cont);
 }
