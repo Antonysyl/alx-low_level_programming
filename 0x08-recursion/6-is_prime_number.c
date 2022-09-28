@@ -19,7 +19,7 @@ return (getNumPrim(n, 2));
  */
 int getNumPrim(int num, int i)
 {
-if (num == 1)
+if (num == i)
 return (1);
 if (num % i == 0)
 return (0);
