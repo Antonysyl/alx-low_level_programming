@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * check_digit - checks if a given
+ * main - checks if a given
  * char is a number or not
  * @argc: argument count
  * @argv: argument vector
