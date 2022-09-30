@@ -3,8 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * check_digit - checks if a given char is a number or not
- * @a: input char
+ * check_digit - checks if a given
+ * char is a number or not
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
  */
 int main(int argc, char *argv[])
