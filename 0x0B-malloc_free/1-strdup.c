@@ -7,21 +7,21 @@
  */
 char *_strdup(char *str)
 {
-char *s;
-int i = 0, j;
-if (!str)
+char *dup;
+unsigned int i = 0;
+unsigned int j = 0;
+if (str == NULL)
 return (NULL);
-while (*(str + i))
-i++;
-i++;
-s = malloc(sizof(char) * i);
-if (s == NULL)
-{
+while (str[i] != '\0')
+i += 1;
+i += 1;
+dup = malloc(i *sizeof(*dup));
+if (dup == NULL)
 return (NULL);
-}
-for (j = 0; j <= i; j++)
+while (j < i)
 {
-s[j] = str[j];
+dup [j] = str[j];
+j += 1;
 }
-return (s);
+return (dup);
 }
