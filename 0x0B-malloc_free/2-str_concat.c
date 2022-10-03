@@ -20,7 +20,7 @@ i += 1;
 while (s2[j] != '\0')
 j += 1;
 j += 1;
-cat = malloc((i + j) * sizeof(*cat));
+cat = malloc((i + j)*sizeof(*cat));
 if (cat == NULL)
 return (NULL);
 while (s1[x] != '\0')
@@ -29,7 +29,7 @@ cat[x] = s1[x];
 x += 1;
 }
 while (s2[y] != '\0')
-{	
+{
 cat[x] = s2[y];
 y += 1;
 x += 1;
