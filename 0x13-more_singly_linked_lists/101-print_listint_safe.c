@@ -13,7 +13,7 @@ size_t num = 0;
 long int diff;
 while (head)
 {
-diff = head - head->next;
+diff = head->next;
 num++;
 printf("[%p] %d\n", (void *)head, head->n);
 if (diff > 0)
