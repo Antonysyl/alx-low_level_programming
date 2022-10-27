@@ -1,27 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * set_bit - sets the bit at the given index to 1
- * @n: pointer to the number
- * @index: index to change
- * Return: 1 if worked and -1 if did not work
+ * set_bit - Sets the value of a bit at a given index to 1.
+ * @n: A pointer to the bit.
+ * @index: The index to set the value at - indices start at 0.
+ *
+ * Return: If an error occurs - -1.
+ *         Otherwise - 1.
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-unsigned long int mask;
-unsigned int s_index;
-(void) index;
-mask = 1;
-s_index = 0;
-while (mask < 2147483648)
-{
-if (s_index == index)
-{
-*n  = *n | 1 << index;
-return (1);
-}
-s_index++;
-mask = mask << 1;
-}
+if (index >= (sizeof(unsigned long int) * 8))
 return (-1);
+*n ^= (1 << index);
+return (1);
 }
