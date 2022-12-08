@@ -26,5 +26,6 @@ new->next = h;
 if (h != NULL)
 h->prev = new;
 *head = new;
-return (new);
+
+  return (new);
 }
