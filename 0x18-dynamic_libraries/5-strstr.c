@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - function locate
  * @haystack: pointer to char
